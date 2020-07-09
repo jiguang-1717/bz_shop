@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: frontend-sso
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bz_shop?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: jiguang
+    type: com.alibaba.druid.pool.DruidDataSource
+
+server:
+  port: 9090
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/

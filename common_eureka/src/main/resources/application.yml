@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: eureka-server
+#duankou
+server:
+  port: 8761
+#关闭自动注册
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false

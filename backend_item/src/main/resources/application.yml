@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: backend-item
+
+server:
+  port: 9011
+  max-http-header-size: 1024000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/
+

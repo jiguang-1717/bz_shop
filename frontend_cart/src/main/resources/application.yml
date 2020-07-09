@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: frontend-cart
+
+server:
+  port: 9040
+  max-http-header-size: 1024000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/
+
+
+cart_cookie_name: CART_COOKIE_NAME

@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: common-redis
+  redis:
+    database: 1
+    host: 192.168.10.100
+    port: 6379
+    jedis:
+      pool:
+        max-active: 200
+        max-wait: -1
+        max-idle: 10
+        min-idle: 0
+    timeout: 2000
+    password: root
+
+server:
+  port: 9080
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/
+
+#前台左侧商品的分类的类目键
+frontend_catresult_Redis_key: frontend:catresult:redis:key
+#前台大广告位数据的键
+frontend_ad_redis_key: frontend:ad:redis:key:89
+
+frontend_item_redis_key: frontend:item:redis:key
+
+#用户的key
+user_redis_key: user:redis:key
+
+#购物车的key
+frontend_cart_redis_key: frontend:cart:redis:key
